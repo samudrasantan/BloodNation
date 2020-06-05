@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_layout"
+    app:startDestination="@id/mainFragment2"
+    >
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="org.bloodnation.bloodnation.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment2_to_logInOrRegister"
+            app:destination="@id/logInOrRegister"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/logInOrRegister"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment2_to_signUpConfirmation"
+            app:destination="@id/signUpConfirmation"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/signUpConfirmation"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_mainFragment2_to_testFragment"
+            app:destination="@id/testFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInOrRegister"
+        android:name="org.bloodnation.bloodnation.authentication.LogInOrRegister"
+        android:label="fragment_log_in_or_register"
+        tools:layout="@layout/fragment_log_in_or_register" >
+        <action
+            android:id="@+id/action_logInOrRegister_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/mainFragment2"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpConfirmation"
+        android:name="org.bloodnation.bloodnation.authentication.SignUpConfirmation"
+        android:label="fragment_sign_up_confirmation"
+        tools:layout="@layout/fragment_sign_up_confirmation" >
+        <action
+            android:id="@+id/action_signUpConfirmation_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/mainFragment2"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signUpConfirmation_to_searchContactFragment"
+            app:destination="@id/searchContactFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/searchContactFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signUpConfirmation_to_logInOrRegister"
+            app:destination="@id/logInOrRegister"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/logInOrRegister"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="org.bloodnation.bloodnation.main.MainLobby"
+        android:label="fragment_test"
+        tools:layout="@layout/fragment_test" >
+        <action
+            android:id="@+id/action_testFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+        <action
+            android:id="@+id/action_testFragment_to_searchContactFragment"
+            app:destination="@id/searchContactFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_testFragment_to_signUpConfirmation"
+            app:destination="@id/signUpConfirmation" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchContactFragment"
+        android:name="org.bloodnation.bloodnation.search.SearchContactFragment"
+        android:label="fragment_search_contact"
+        tools:layout="@layout/fragment_search_contact" >
+        <action
+            android:id="@+id/action_searchContactFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/searchContactFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_searchContactFragment_to_donorProfile"
+            app:destination="@id/donorProfile"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/searchContactFragment"
+            app:popUpToInclusive="false">
+
+
+        </action>
+        <action
+            android:id="@+id/action_searchContactFragment_to_logInOrRegister"
+            app:destination="@id/logInOrRegister"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/mainFragment2"
+            app:popUpToInclusive="true" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="org.bloodnation.bloodnation.profile.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_logInOrRegister"
+            app:destination="@id/logInOrRegister"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/logInOrRegister"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profileFragment_to_settings"
+            app:destination="@id/settings"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_profileFragment_to_signUpConfirmation"
+            app:destination="@id/signUpConfirmation"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:exitAnim="@anim/fui_slide_out_left"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/donorProfile"
+        android:name="org.bloodnation.bloodnation.profile.DonorProfile"
+        android:label="DonorProfile" >
+        <argument
+            android:name="donorId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="org.bloodnation.bloodnation.settings.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

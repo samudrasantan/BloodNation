@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorLight</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="AppThemeDark" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorDarkBackground</item>
+        <item name="colorPrimaryDark">@color/colorDarkLight</item>
+        <item name="colorAccent">@color/colorLight1</item>
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+
+    <style name="whiteTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:windowBackground">@color/logo_background</item>
+    </style>
+
+
+    <style name="spinnerTheme">
+        <item name="android:textColor">@color/RedPrimary</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "619474561972",
+    "firebase_url": "https://bloodnation-236a6.firebaseio.com",
+    "project_id": "bloodnation-236a6",
+    "storage_bucket": "bloodnation-236a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619474561972:android:5ba97a4a0194f646fce0e1",
+        "android_client_info": {
+          "package_name": "org.bloodnation.bloodnation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619474561972-aj7borr9bm39tnd3n64rlnek1c2q3qdt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.bloodnation.bloodnation",
+            "certificate_hash": "7aefb99f95e96bfe162d67ead7a811b68fb556cd"
+          }
+        },
+        {
+          "client_id": "619474561972-nlpu0elu7uivot8pud76b8df1imhlf28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaw7VBWAJJ3LYf-R3xM2QjYfNTeqpeNnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619474561972-nlpu0elu7uivot8pud76b8df1imhlf28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
